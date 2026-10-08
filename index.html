@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Rally Creators Vendimax — produza 100 vídeos, gere GMV e concorra a prêmios.">
+<title>Rally Creators Vendimax</title>
+<style>
+:root{--bg:#050505;--card:#0f0d08;--gold:#ffc400;--gold2:#ff9d00;--text:#fff;--muted:#b8b2a4;--line:rgba(255,196,0,.34);--green:#20c063;--red:#ff6b62}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:#000}body{margin:0;background:radial-gradient(450px 300px at 100% 0,rgba(255,177,0,.18),transparent 65%),linear-gradient(#020202,#090704 42%,#030303);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.app{width:100%;max-width:480px;margin:auto;min-height:100vh;overflow:hidden}.section{padding:27px 18px}.card{background:linear-gradient(155deg,#17130a,#080808 65%);border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.45),0 0 26px rgba(255,174,0,.09)}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 18px 4px;gap:12px}header img{width:118px;height:auto;display:block}.tag{border:1px solid var(--line);background:rgba(255,196,0,.07);color:#ffe99a;border-radius:999px;padding:7px 10px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.hero{padding:17px 18px 22px}.kicker,.eyebrow{color:var(--gold);font-size:10px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:50px;line-height:.9;letter-spacing:-.055em;text-transform:uppercase;margin:8px 0 13px}.gold{background:linear-gradient(#fff1a4,#ffd11b 38%,#ff9e00);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#d1cdc1;font-size:16px;line-height:1.45;margin:0 0 20px;max-width:33ch}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;border:0;border-radius:15px;text-decoration:none;cursor:pointer;font-weight:1000;text-transform:uppercase;color:#171000;background:linear-gradient(#ffe778,#ffc400 52%,#ff9d00);box-shadow:0 12px 32px rgba(255,176,0,.23)}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.quick div{border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.025);border-radius:14px;padding:11px 8px;text-align:center}.quick strong{display:block;font-size:17px;line-height:1}.quick span{display:block;color:#8f8b80;font-size:10px;margin-top:5px;line-height:1.15}
+.goal{padding:20px}.goalTop{display:flex;justify-content:space-between;gap:12px}.goal small{color:var(--gold);font-weight:1000;letter-spacing:.1em;text-transform:uppercase}.goal h2{font-size:44px;line-height:1;margin:5px 0}.goal p{font-size:13px;color:#c4bfb1;margin:0}.unlock{width:50px;height:50px;display:grid;place-items:center;border-radius:15px;border:1px solid var(--line);background:rgba(255,196,0,.08);font-size:23px}.pm{display:flex;justify-content:space-between;font-size:11px;color:#a6a095;margin:16px 0 7px}.track{height:12px;background:#242118;border-radius:999px;overflow:hidden}.fill{height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,#ff9800,#ffd71e);transition:.6s}.gf{display:flex;justify-content:space-between;margin-top:9px;color:#807b72;font-size:10px}
+.head{margin-bottom:15px}.head h2{font-size:30px;letter-spacing:-.035em;line-height:1;margin:5px 0 7px}.head p{color:var(--muted);font-size:13px;line-height:1.45;margin:0}
+.mainPrize{overflow:hidden;margin-bottom:10px}.photo{position:relative;background:#f5f4ef;min-height:260px;display:flex;align-items:center;justify-content:center;padding:14px 16px 0}.photo img{width:100%;max-width:355px;display:block}.rank{position:absolute;top:13px;left:13px;background:linear-gradient(#ffe675,#ffb000);color:#160f00;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:1000}.pc{padding:16px 18px 19px}.pc h3{font-size:21px;margin:0 0 4px}.pc p{margin:0;color:#aaa497;font-size:12px}
+.cash{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cash article{padding:15px;min-height:162px}.cash .place{font-size:10px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase;color:#bbb5a8}.pix{width:44px;height:44px;border-radius:14px;background:#111;border:1px solid rgba(255,255,255,.08);display:grid;place-items:center;margin:13px 0 10px;color:#32bcad;font-size:25px}.cash strong{display:block;color:var(--gold);font-size:25px}.cash span{font-size:11px;color:#8f8b81}
+.mission{padding:18px;display:grid;grid-template-columns:60px 1fr;gap:13px;align-items:center}.mi{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;background:rgba(255,196,0,.10);border:1px solid var(--line);font-size:28px}.mission small{color:var(--gold);font-size:10px;font-weight:1000;text-transform:uppercase}.mission h3{font-size:25px;margin:2px 0}.mission p{margin:0;color:#a9a398;font-size:12px}.mn{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.07);padding-top:11px;font-size:12px;color:#d7d2c7}
+.steps{display:grid;gap:9px}.step{padding:14px;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:center}.n{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(#ffe66b,#ffad00);color:#1a1100;font-size:14px;font-weight:1000}.step h3{font-size:15px;margin:0 0 2px}.step p{font-size:11px;color:#9e998e;margin:0;line-height:1.35}
+.rules{padding:17px}.rule{display:grid;grid-template-columns:24px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.055)}.rule:last-child{border:0}.tick{width:23px;height:23px;border-radius:8px;display:grid;place-items:center;background:rgba(255,196,0,.13);color:var(--gold);font-weight:1000}.rule strong{display:block;font-size:13px;margin-bottom:2px}.rule span{display:block;color:#999388;font-size:11px;line-height:1.4}
+.form{padding:18px}.form form{display:grid;gap:11px}.form label{font-size:11px;font-weight:800;color:#d7d2c7}.form input,.form textarea{width:100%;margin-top:6px;background:#151411;border:1px solid rgba(255,196,0,.2);border-radius:13px;padding:13px;color:#fff;outline:none}.form textarea{min-height:74px;resize:vertical}.form input:focus,.form textarea:focus{border-color:rgba(255,196,0,.75);box-shadow:0 0 0 3px rgba(255,196,0,.07)}.consent{display:flex!important;gap:9px;align-items:flex-start;color:#9c978c!important;font-size:10px!important;line-height:1.4}.consent input{width:18px!important;height:18px;margin:0!important;flex:0 0 auto;accent-color:var(--gold)}.status{display:none;padding:12px;border-radius:12px;font-size:11px;line-height:1.4}.status.show{display:block}.status.ok{background:rgba(32,192,99,.08);border:1px solid rgba(32,192,99,.28);color:#b9f3d1}.status.err{background:rgba(255,107,98,.08);border:1px solid rgba(255,107,98,.28);color:#ffc2bd}.wa{display:block;text-decoration:none;text-align:center;padding:14px;border-radius:14px;margin-top:10px;border:1px solid rgba(32,192,99,.32);background:rgba(32,192,99,.075);color:#d7ffe8;font-weight:900;font-size:13px}.fine{font-size:9.5px;color:#777268;text-align:center;line-height:1.45;margin:11px 0 0}footer{text-align:center;color:#6f6a60;font-size:10px;padding:18px 18px 34px}
+</style>
+</head>
+<body>
+<main class="app">
+<header><img src="./assets/logo-vendimax.svg" alt="Vendimax TikTok Shop Loja Oficial"><span class="tag">Rally Outubro</span></header>
+
+<section class="hero">
+<div class="kicker">Comunidade de Creators Vendimax</div>
+<h1>Rally<br><span class="gold">Creators</span></h1>
+<p>Produza, gere vendas e ajude a comunidade a desbloquear a premiação do mês.</p>
+<a class="btn" href="#cadastro">Quero participar →</a>
+<div class="quick"><div><strong>100</strong><span>vídeos até 30/10</span></div><div><strong>R$ 6K</strong><span>GMV da comunidade</span></div><div><strong>3</strong><span>creators premiados</span></div></div>
+</section>
+
+<section class="section" style="padding-top:8px"><div class="card goal">
+<div class="goalTop"><div><small>Meta da comunidade</small><h2 class="gold">R$ 6.000</h2><p>Batendo a meta coletiva, os prêmios são desbloqueados.</p></div><div class="unlock">🔓</div></div>
+<div class="pm"><span>GMV atual</span><strong id="gmvText"></strong></div><div class="track"><div id="gmvFill" class="fill"></div></div><div class="gf"><span id="days"></span><span id="pct"></span></div>
+</div></section>
+
+<section class="section">
+<div class="head"><div class="eyebrow">Premiação</div><h2>O que está em jogo</h2><p>O ranking é por GMV individual. A premiação só é liberada se a comunidade atingir R$ 6.000.</p></div>
+<article class="card mainPrize"><div class="photo"><span class="rank">🏆 1º LUGAR</span><img src="./assets/hollyland.svg" alt="Microfone Hollyland"></div><div class="pc"><h3>Microfone Hollyland</h3><p>Para o creator elegível com o maior GMV individual no período.</p></div></article>
+<div class="cash"><article class="card"><div class="place">2º lugar</div><div class="pix">◆</div><strong>R$ 150</strong><span>via Pix</span></article><article class="card"><div class="place">3º lugar</div><div class="pix">◆</div><strong>R$ 100</strong><span>via Pix</span></article></div>
+</section>
+
+<section class="section" style="padding-top:6px"><div class="card mission"><div class="mi">🎬</div><div><small>Missão individual</small><h3>100 vídeos</h3><p>Publicados até 30/10 para estar elegível à premiação.</p></div><div class="mn">Isso representa aproximadamente <strong>4 a 5 vídeos por dia</strong> até o encerramento da campanha.</div></div></section>
+
+<section class="section"><div class="head"><div class="eyebrow">Como funciona</div><h2>Simples e direto</h2></div><div class="steps">
+<article class="card step"><div class="n">1</div><div><h3>Cadastre seu perfil</h3><p>Escolha qual conta do TikTok vai competir no Rally.</p></div></article>
+<article class="card step"><div class="n">2</div><div><h3>Complete 100 vídeos</h3><p>A meta precisa ser cumprida até 30/10.</p></div></article>
+<article class="card step"><div class="n">3</div><div><h3>Gere vendas</h3><p>Quanto maior seu GMV individual, melhor sua posição.</p></div></article>
+<article class="card step"><div class="n">4</div><div><h3>Desbloqueiem juntos</h3><p>A comunidade precisa atingir R$ 6.000 em GMV.</p></div></article>
+</div></section>
+
+<section class="section"><div class="head"><div class="eyebrow">Regras</div><h2>Antes de entrar</h2></div><div class="card rules">
+<div class="rule"><div class="tick">✓</div><div><strong>1 perfil = 1 resultado</strong><span>A apuração é feita exclusivamente pelo perfil cadastrado.</span></div></div>
+<div class="rule"><div class="tick">✓</div><div><strong>Não é permitido somar perfis</strong><span>O GMV de 2, 3 ou mais contas não pode formar um único resultado.</span></div></div>
+<div class="rule"><div class="tick">✓</div><div><strong>Outro perfil, outra participação</strong><span>Cada conta compete separadamente e precisa de cadastro próprio.</span></div></div>
+<div class="rule"><div class="tick">✓</div><div><strong>100 vídeos até 30/10</strong><span>É obrigatório cumprir a meta individual para estar elegível.</span></div></div>
+<div class="rule"><div class="tick">✓</div><div><strong>Ranking por GMV individual</strong><span>1º, 2º e 3º lugares são definidos pelo GMV do perfil participante.</span></div></div>
+<div class="rule"><div class="tick">✓</div><div><strong>Prêmio só com meta coletiva batida</strong><span>Só haverá premiação se a comunidade atingir R$ 6.000 em GMV.</span></div></div>
+</div></section>
+
+<section class="section" id="cadastro"><div class="head"><div class="eyebrow">Inscrição</div><h2>Entre no Rally</h2><p>Cadastre o perfil que vai competir.</p></div><div class="card form">
+<form id="rallyForm">
+<label>Nome completo<input name="nome" autocomplete="name" required placeholder="Seu nome"></label>
+<label>WhatsApp<input name="whatsapp" type="tel" autocomplete="tel" required placeholder="(11) 99999-9999"></label>
+<label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label>
+<label>@Perfil que vai competir<input name="perfil" required placeholder="@seuperfil"></label>
+<label>Outros perfis <span style="color:#777268;font-weight:500">(opcional)</span><textarea name="outros" placeholder="@perfil2, @perfil3... — não serão somados"></textarea></label>
+<label>Cidade / Estado<input name="cidade" placeholder="São Paulo / SP"></label>
+<label class="consent"><input name="aceite" type="checkbox" required><span>Li e concordo com as regras do Rally. Entendo que não é permitido somar resultados de perfis diferentes e que a premiação depende da meta coletiva de GMV.</span></label>
+<button id="submitBtn" class="btn" type="submit">Quero participar do Rally →</button>
+<div id="status" class="status"></div>
+</form>
+<a class="wa" href="https://chat.whatsapp.com/H51ny5GuCq9AHe60ZHsPac" target="_blank" rel="noopener">Entrar na comunidade do WhatsApp</a>
+<p class="fine">As atualizações de ranking, metas e orientações serão comunicadas dentro da comunidade.</p>
+</div></section>
+<footer>© 2026 Vendimax • TikTok Shop • Rally Creators</footer>
+</main>
+
+<script>
+const TARGET_GMV=6000,CURRENT_GMV=400,END_DATE=new Date("2026-10-30T23:59:59-03:00");
+const FORM_ENDPOINT="https://formsubmit.co/ajax/marketing.vendimax@outlook.com";
+const brl=v=>new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL",maximumFractionDigits:0}).format(v);
+const p=Math.max(0,Math.min(100,CURRENT_GMV/TARGET_GMV*100));
+gmvFill.style.width=p+"%";gmvText.textContent=brl(CURRENT_GMV)+" / "+brl(TARGET_GMV);pct.textContent=p.toFixed(1).replace(".",",")+"%";
+const d=Math.max(0,Math.ceil((END_DATE-new Date())/86400000));days.textContent=d>1?d+" dias restantes":d===1?"Último dia":"Campanha encerrada";
+rallyForm.addEventListener("submit",async e=>{e.preventDefault();if(!rallyForm.reportValidity())return;submitBtn.disabled=true;submitBtn.textContent="Enviando...";
+try{const fd=new FormData(rallyForm);fd.append("_subject","Novo cadastro — Rally Creators Vendimax");fd.append("_template","table");const r=await fetch(FORM_ENDPOINT,{method:"POST",body:fd,headers:{Accept:"application/json"}});if(!r.ok)throw 0;rallyForm.reset();status.className="status show ok";status.textContent="Cadastro enviado! Agora entre na comunidade do WhatsApp para acompanhar o Rally.";}
+catch(_){status.className="status show err";status.textContent="Não foi possível enviar agora. Tente novamente em alguns instantes."}
+finally{submitBtn.disabled=false;submitBtn.textContent="Quero participar do Rally →"}});
+</script>
+</body>
+</html>
